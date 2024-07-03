@@ -37,8 +37,8 @@ export default function Timer() {
     // 케이스4. setInterval을 useEffect에 넣고 cleanup 함수를 작성하고 setCount를 함수업데이트로 한 경우
     useEffect(() => {
         const timer = setInterval(() => {
-            // setCount(count => count + 1);
-            setCount(count + 1);
+            setCount(count => count + 1);
+            // setCount(count + 1);
         }, 1000);
 
         return () => {
