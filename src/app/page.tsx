@@ -15,7 +15,7 @@ export default function Home() {
 
     return () => {
       console.log('cleanup');
-      //clearInterval(inter);
+      //clearInterval(inter); // 이거 주석처리하면 cleanup이 안됨. test로 페이지 이동해도 interval이 계속 돌아감. cleanup 하면 interval이 멈추고 test로 이동함. console에서 확인 가능.
       // clearTimeout(time);
     }
   }, []);
